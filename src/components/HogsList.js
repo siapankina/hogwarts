@@ -31,7 +31,7 @@ class HogsList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ui grid container">
         {this.sortHogs()
           .filter(hog => (this.props.filterGreased ? !hog.greased : true))
           .map(hog => (

@@ -10,9 +10,9 @@ const Nav = ({ filterGreased, toggleGreased, nameSorting, weightSorting }) => {
       </div>
       <span className="normalText">A React App for County Fair Hog Fans</span>
       {filterGreased ? (
-        <button onClick={toggleGreased}>helo</button>
+        <button onClick={toggleGreased}>Show All Hogs</button>
       ) : (
-        <button onClick={toggleGreased}>bye</button>
+        <button onClick={toggleGreased}>Show not Greased hogs</button>
       )}
       <button onClick={nameSorting}>Sort by name</button>
       <button onClick={weightSorting}>Sort by weight</button>

@@ -30,11 +30,11 @@ class Hog extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ui eight wide column">
+        <img src={this.getImg()} onClick={this.onShowHogInfo}></img>
         <h5>{this.props.showHog.name}</h5>
         {/* {this.getinfocomponent()} */}
         {this.state.showing ? <HogInfo hogInfo={this.props.showHog} /> : null}
-        <img src={this.getImg()} onClick={this.onShowHogInfo}></img>
       </div>
     );
   }
